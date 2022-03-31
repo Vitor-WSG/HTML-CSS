@@ -1,0 +1,25 @@
+@keyframes exemplo{
+    0%{width: 100px; height: 100px; background-color:black;top: 0; left: 0;}
+    25%{border-radius: 250px; width: 200px; height: 200px; background-color:red;top: 0; left: 200;}
+    50%{border-top: 0px; border-left: 50px; border-right: 50px; border-bottom: 75px; width:0; height: 0; background-color: black;top: 200; left: 200;}
+    75%{border-radius: 250px; width: 400px; height: 400px; background-color: red;top: 200;left: 0;}
+    100%{ width: 500px; height: 500px; background-color:black;top: 0;left: 0;}
+    }
+}
+
+
+
+body{
+    margin: 0;
+}
+.exemplo{
+    width: 500px;
+    height: 500px;
+    background-color:black;
+    position: absolute;
+    animation-name: exemplo;/* nome da animacao */
+    animation-delay: 1s;/* tempo para iniciar animacao */
+    animation-duration: 3s; /* velocidade da animacao */
+    animation-iteration-count: infinite;/* Quantas vezes deve-se repetir da animacao OBS para infinito coloque infinite*/
+
+}

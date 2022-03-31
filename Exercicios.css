@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    background-color: black;
+}
+.a {
+    background-color: yellow;;
+    font-weight: bold;
+}
+.v {
+    background-color: green;
+    font-weight: bold;
+}
+.p {
+    background-color: purple;
+    font-weight: bold;
+}
+.titulo {
+    font-weight: bold;
+    color: black;
+    background-color: white;
+}
+.cabecalho{
+    background-color: blue;
+    font-weight: bold;
+}
+a:hover {
+    background-color: white;
+    font-size: 20px;
+}
+.cabecalho + a {
+    color: white;
+}

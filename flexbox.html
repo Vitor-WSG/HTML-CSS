@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox01</title>
+
+    <style>
+        .container{
+            background-color: gray;
+            height: 500px;
+            display: flex; /*Ativa o uso do flexbox */
+            /* flex-direction: row-reverse; /*Organiza em linhas ou colunas, comum ou reversas */
+            /* flex-wrap: wrap; /* permite quebra de linha */
+            /* flex-flow: row wrap; /* Organiza em linha, permitindo segunda quebra de linha*/
+            justify-content: center; /*Alinha POR LINHA o conteudo da DIV */
+            align-items: center;/*Alinha POR COLUNA o conteudo da DIV */           
+        }
+
+        .container div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

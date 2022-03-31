@@ -1,0 +1,35 @@
+.topo{
+    width: 100%;
+    height: 100px;
+    line-height: 100px; /*altura da linha do texto*/
+    background-color: orange;
+    text-align: center;
+    margin: auto;
+}
+P{
+    padding: 10px;
+}
+h3{
+    padding-left: 10px;
+}
+.cidade{
+    width: 25%;
+    float: left;/*Essa parte fez o texto ficar lado a lado*/
+}
+
+@media only screen and (min-width:500px) and (max-width:800px){
+    .cidade{
+        width: 50%;
+    }
+}
+@media only screen and (max-width:500px) {
+    .cidade{
+        width: 100%;
+    }
+
+}
+@media only screen and (min-width:801px) and (max-width:1000px){
+    .cidade{
+        width: 33%;
+    }
+}

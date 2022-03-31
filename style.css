@@ -1,0 +1,88 @@
+/* Seletores */
+h1 {
+    color: blue;
+}
+h2{
+    color: red;
+}
+span{
+    color: red;
+    background-color: white;
+}
+
+/* Classes - ideal para uso em vários elementos*/
+.classe1 {
+    color: brown;
+}
+.classe2{
+    color: cyan;
+}
+/* ID  - ideal para uso de apenas um elemento*/
+#id01{
+    font-size: 20px;
+    color: darkgoldenrod;
+}
+
+/* Exercicio de DIVs*/
+.cabecalho{
+    font-size: 50px;
+    background-color: red;
+    text-align: center;
+    height: 50px;
+}
+.menu{
+    font-size: 30px;
+    background-color: yellow;
+    text-align: center;
+    color: black;
+    height: 200px;
+    width: 300px;
+}
+.conteudo{
+    font-size: 30px;
+    background-color: green;
+    color:black;
+    text-align: center;
+    height: 300px;
+    width: 500px;
+    float: left;
+}
+.cabecalho,.menu, .conteudo { /* Aplicando estilo para mais de uma classe, ou ID ou TAG*/
+    font-weight: bold;
+}
+
+/*BORDAS*/
+.borda{
+    background-color: rgb(184, 184, 179);
+    color: black;
+    width: 400px;
+    height: 400px;
+    border: 5px solid red; /* Expessura, tipo, cor*/
+    border-radius: 20px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    ;
+}
+
+/*SELETOR INTERNO e ADJACENTE*/
+div span { /* Ira aplicar somente para o SPAN dentro dessa DIV*/
+    background-color: salmon;
+}
+.classe span { /* Ira aplicar somente para o SPAN dentro dessa CLASSE*/
+    background-color: seagreen;
+}
+
+.classe + span {/* Ira aplicar para a tag logo apos a classe, somente logo apos*/
+    background-color: white;
+}
+
+/*SELETOR HOVER*/
+a{
+    color: white;
+}
+.hover a:hover {
+    color: red;
+    font-weight: bold;
+    font-style: italic; 
+    font-size: 20px;  
+}

@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+}
+@keyframes animacao{
+    0%{background-color: white;top:0;left:0;}
+    25%{background-color: yellow;top:0; left:200px;}
+    50%{background-color: green;top:200px;left: 200px;}
+    75%{background-color: indianred;top: 200px;left: 0px}
+    100%{background-color: brown;top: 0;left: 0;}
+}
+.animacao{
+    background-color: red;
+    position: absolute;   
+    width: 150px;
+    height: 150px;
+    animation-name: animacao; /* nome da animação*/
+    animation-duration: 3s; /* duaração da animação*/
+    animation-iteration-count:infinite ; /* quantidade de repetição da animação ou infinite para reprodução infinita*/
+}

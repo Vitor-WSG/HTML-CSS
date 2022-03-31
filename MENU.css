@@ -1,0 +1,25 @@
+.menu {
+    background-color: blue;
+}
+.menu a {
+    color: white;
+    display: block; /*para tornar a tag "a" um bloco */
+    padding: 10px;
+    text-decoration: none;
+}
+.menu a:hover {
+    background-color: black;
+    font-weight: bolder;  
+}
+.menu li {
+    list-style: none;
+    display: inline-block ; /*transforma a linha em um bloco possibilitando inserir padin */
+}
+.submenu {
+    position: absolute;
+    display: none;
+    min-width: 100px;
+}
+.menu li:hover .submenu{
+    display: block;
+}

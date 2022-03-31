@@ -1,0 +1,29 @@
+.slideshow{
+    height: 400px;
+    width: 300px;
+    overflow: hidden;
+}
+.slidearea{
+    height: 400px;
+    width: 2000000000px;
+    transition: all 3s;
+}
+.slide{
+    height: 400px;
+    width: 300px;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: -130px;
+
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes slide{
+    0% {margin-left: 0px;}
+    25%{margin-left: -150px;}
+    50%{margin-left: -300px;}
+    75%{margin-left: -450px;}
+    100%{margin-left: -600px;}
+}

@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Forumlario</title>
+        <meta http-equiv="refresh" >
+        <link rel="stylesheet" href="css\style.css"/>
+    </head>
+    <body>
+        
+
+    <!-- <form method="GET"></form> Pega informacoes do formulario e mostra no endereco da pagina, nome, senha ... -->
+    <form method="POST" action="local que sera enviado os dados"></form><!-- Informacoes formulario enviados internamente -->
+        
+        Usuario<br/>
+            <input type="text" name="USUARIO" placeholder="Informe seu usuario"/>
+            <br/><br/>
+
+        Senha<br/>
+            <input type="password" name="SENHA" placeholder="Informe sua senha"/>
+            <br/><br/>
+
+        Busca</br>
+            <input type="color" name="search" />   
+            <br/><br/>
+            
+        Email</br>
+            <input type="email" name="email" required />
+            <input type="submit" value="ENVIAR"/>   
+
+            <textarea name="campo" placeholder="Digite sua mensagem aqui..."></textarea>
+            <br/><br/>
+
+            <select name="opcoes">
+                <option value="1">Opcao1</option>
+                <option value="2">Opcao2</option>
+                <option value="3">Opcao3</option>
+            </select>
+            <br/><br/>
+
+            <input type="radio" name="radio" value="1"/>Titulo 1<br/>
+            <input type="radio" name="radio" value="2"/>Titulo 2<br/>
+            <input type="radio" name="radio" value="3"/>Titulo 3<br/>
+            <br/>
+
+        <input type="submit" value="Enviar"/>
+
+
+        <!-- Uso do IFRAME -->
+        <!-- <iframe src="https://www.google.com.br" width="500" height="400" frameborder=2></iframe> -->
+
+        <!-- Adicionando eventos -->
+        
+        <img src="http://www.google.com.br/google.jpg" onclick="alert('Voce clicou na imagem')"/>
+        <img src="http://www.google.com.br/google.jpg" onmouseover="alert('Mouse em cima')"/>
+    
+    </body>
+</html>
+
+
+

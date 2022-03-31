@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#10026; seletor por atributo</title>
+
+<style>
+    /* Procedimento para aplicar efeito sem .class, #id, ou tag*/
+    input,a {
+        display: block;
+    }
+    [required]{ /*item que tenha required*/
+        background-color: red;
+    }
+    [type=password]{ /*item que tenha o type igual a password*/
+        background-color: white;
+    }
+    [type=password]::placeholder{ /*Procedimento para estilizar somente o placeholde*/
+        color: red;
+        text-align: center;
+        font-size: 20px;        
+    }
+    [name="senha"]{ /*item que tenha name igual a senha*/
+        background-color: blue;
+    }
+    a[href*="economia"]{ /*seleciona todo os itens cuja href tenha a palavra informada*/
+        background-color: yellow;
+    }
+    a[href^="http:"]{ /*seleciona todo os itens cuja href se INICIE com http*/
+        background-color: tomato; 
+    }
+    a[href$="html"]{ /*seleciona todo os itens cuja href se FINALIZE com html*/
+        background-color: pink; 
+    }
+    /*div:empty{ /*Aplica efeito para conteudo vazio, caso seja preenchido perde a validadel*/
+        /*background-color: purple;
+    }*/
+    p::first-letter{ /*Apllica sommente para a primeira letra do texto*/
+        font-size: 30px;
+        font-weight: bold;
+    }
+    p::first-line{/*Apllica sommente para a primeira linha do texto*/
+        background-color: yellow;
+    }
+
+    div{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+    }
+    div:first-child{ /*Apllica sommente para a primeira DIV*/
+        border-radius: 20px;
+    }
+    div:last-child{ /*Apllica sommente para a ULTIMA DIV*/
+        background-color: yellow;
+    }
+    div:nth-child(3){ /*Apllica sommente para a A TERCEIRA DIV de cima pra baixo*/
+        background-color: red;
+    }
+    div:nth-last-child(2){ /*Apllica sommente para a A TERCEIRA DIV de baixo pra cima*/
+        background-color: brown;
+    }
+    div{
+        background-color: rgba(red, green, blue, alpha);
+        /*Apllica cores e elemento alpha corresponde a transparencia, variando de 0 a 1 */
+    }
+
+
+    /* body :not(a){ Seleciona o elemento que  NAO QUERO que seja aplicada a formatacao
+        background-color: red; } */
+    div{
+        transform:scale(10deg) ;
+        box-sizing: border-box;
+        /*Insere itens mas sem aumentar as boras do conteudo*/
+    }
+    * { box-sizing: content-box;} /*Cso esteja declarado assim, aplica para todo o conteudo da pagina,
+    Pore quando informado dentro da tag, classe, ID anula essa informação*/
+
+</style>
+
+</head>
+<body>
+    <input type="text" name="usuario" placeholder="teste" required>
+    
+    <input type="password" placeholder="informe sua senha">
+
+    <input type="password" name="senha">
+
+    <a href="https://www.google.com.br">Goolge</a>
+
+    <a href="https://g1.globo.com/economia/tecnologia/noticia/2019/05/14/whatsapp-detecta-vulnerabilidade-que-permite-o-acesso-de-hackers-a-celulares.ghtml">Whatsapp</a>
+
+    <a href="http://www.site.com.br">Site com http</a>
+
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+        It has survived not only five centuries, but also the leap into electronic typesetting, 
+        remaining essentially unchanged. It was popularised in the 1960s with the release of 
+        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+        software like Aldus PageMaker including versions of Lorem Ipsum
+    </p>
+
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+        It has survived not only five centuries, but also the leap into electronic typesetting, 
+        remaining essentially unchanged. It was popularised in the 1960s with the release of 
+        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+        software like Aldus PageMaker including versions of Lorem Ipsum
+    </p>
+
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+        It has survived not only five centuries, but also the leap into electronic typesetting, 
+        remaining essentially unchanged. It was popularised in the 1960s with the release of 
+        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+        software like Aldus PageMaker including versions of Lorem Ipsum
+    </p>
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+</body>
+</html>

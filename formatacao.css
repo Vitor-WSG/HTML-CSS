@@ -1,0 +1,23 @@
+.texto{
+    width: 300px;
+    height: 100px;
+    background-color: grey;
+    color: black;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+
+    /*magin: espaçamento EXTERNO*/
+    margin: auto;
+    margin-top: 20px;
+
+    /*padding: espaçamento INTERNO*/
+    padding-top: 20px;
+}
+
+.flutuante{
+    position: absolute; /*posicionamento independente*/
+    top: 10px;
+}
